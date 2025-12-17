@@ -1,6 +1,4 @@
-/* ====================================================
-            --- 1. GLOBAL RESET & BODY ---
-            ==================================================== */
+
             * {
                 box-sizing: border-box; /* Ensures padding doesn't add to the width */
                 margin: 0;
@@ -25,11 +23,6 @@
                 padding: 0;
             }
 
-            /* ====================================================
-            --- 2. HEADER & NAVIGATION ---
-            ==================================================== */
-
-            /* --- 2a. Top Bar --- */
             .top-bar {
                 display: flex;
                 justify-content: space-between;
@@ -142,7 +135,6 @@
                 padding: 4px;
             }
 
-            /* --- 2d. Mega Menu Dropdowns --- */
             .mega-menu {
                 position: absolute;
                 top: 80px; /* This is the height of your .main-nav */
@@ -212,12 +204,12 @@
                 border-bottom: none; /* Just to be sure */
             }
 
-            /* --- 2e. Notification Menu (for SNKRS) --- */
+           
             .mega-menu--notification {
-                background-color: #f5f5f5; /* Light grey background from image */
-                padding: 16px 48px; /* Padding for the bar */
+                background-color: #f5f5f5; 
+                padding: 16px 48px;
                 text-align: center;
-                border-top: 1px solid #e5e5e5; /* Faint top border */
+                border-top: 1px solid #e5e5e5; 
             }
 
             .mega-menu--notification p {
@@ -227,11 +219,7 @@
                 font-weight: 400;
             }
 
-            /* ====================================================
-            --- 3. RESPONSIVE NAVIGATION STYLES ---
-            ==================================================== */
-
-            /* 3a. Hamburger Button (Hidden on Desktop) */
+    
             .mobile-menu-button {
                 display: none; /* Hidden by default */
                 background: none;
@@ -308,9 +296,9 @@
                 margin: 20px 0;
             }
 
-            /* 3c. Media Query to activate mobile view */
+     
             @media (max-width: 1024px) {
-                /* Hide desktop-specific elements */
+           
                 .top-bar,
                 .nav-menu,
                 .mega-menu,
@@ -318,12 +306,12 @@
                     display: none;
                 }
 
-                /* Show the mobile hamburger button */
+     
                 .mobile-menu-button {
                     display: block;
                 }
 
-                /* Adjust the main nav bar layout for mobile */
+
                 .main-nav {
                     justify-content: space-between;
                     padding: 0 24px;
@@ -331,7 +319,7 @@
                 }
                 .nav-left,
                 .nav-right {
-                    position: static; /* Let them fall into the flex layout */
+                    position: static; 
                     transform: none;
                 }
                 .nike-logo {
@@ -339,7 +327,7 @@
                     width: 40px;
                 }
                 .nav-right {
-                    gap: 8px; /* Reduce space between right-side icons */
+                    gap: 8px; 
                 }
                 .search-container {
                     background-color: transparent;
@@ -350,7 +338,6 @@
                 }
             }
 
-            /* 3d. Optional: Finer adjustments for very small phones */
             @media (max-width: 767px) {
                 .main-nav {
                     padding: 0 16px;
@@ -360,44 +347,37 @@
                 }
             }
 
-            /* ====================================================
-            --- 4. ATHLETE PICKS BANNER STYLES ---
-            ==================================================== */
 
-            /* --- 4a. Main Page Container --- */
+
             .athlete-picks-container {
                 width: 100%;
                 max-width: 1920px; /* Constrains the width on very wide screens */
                 margin: 0 auto;     /* Centers the container */
             }
 
-            /* --- 4b. Banner Image Section --- */
-           /* --- 4b. Banner Image Section --- */
+
 .banner-image {
     position: relative;
-    width: 90%; /* <-- Use a percentage width */
-    max-width: 1400px; /* <-- Optional: Set a maximum pixel width */
+    width: 90%; 
+    max-width: 1400px; 
     height: 450px;
-    margin-left: auto; /* <-- Center horizontally */
-    margin-right: auto; /* <-- Center horizontally */
-    overflow: hidden; /* Ensures image fits cleanly */
+    margin-left: auto;
+    margin-right: auto; 
+    overflow: hidden;
 }
-            /* Styles for the <img> tag inside the banner */
             .banner-image img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* Scales the image to fill the container */
-                object-position: center ; /* Aligns the image to the bottom */
+                object-fit: cover; 
+                object-position: center ; 
             }
 
-            /* --- 4c. Overlay Title --- */
-            /* --- 4c. Overlay Title --- */
 .banner-title {
     position: absolute;
-    top: 150px; /* <-- INCREASED: Move text down */
-    left: 5%;   /* <-- Kept the same for now */
+    top: 150px; 
+    left: 5%;   
     color: white;
-    font-size: 3rem; /* <-- DECREASED: Make text smaller */
+    font-size: 3rem; 
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -409,9 +389,7 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    /* Decrease the first value for less height */
     padding: 1rem 30px; /* <-- DECREASED first value */
-    /* Or try pixels: padding: 8px 24px; */
     width: 100%;
     max-width: 100%;
     margin-left: auto;
@@ -461,9 +439,6 @@
                 stroke-width: 1.5;
             }
 
-            /* ====================================================
-            --- 5. MAIN CONTENT & GRID (STICKY SIDEBAR) ---
-            ==================================================== */
 
             /* --- 5a. Main Content Area (2-Column Layout) --- */
             .main-content {
@@ -473,26 +448,15 @@
                 gap: 30px; /* Space between sidebar and grid */
             }
 
-            /* --- 5b. Filter Sidebar (Left Column - Sticky Behavior) --- */
-            /* ====================================================
---- 5. MAIN CONTENT & GRID (STICKY SIDEBAR) ---
-==================================================== */
 
-/* ... (your .main-content rule) ... */
 
-/* --- 5b. Filter Sidebar (Left Column - Sticky Behavior) --- */
 .filter-sidebar {
     width: 280px;
     flex-shrink: 0; /* Prevents sidebar from shrinking */
 
-    /* --- STICKY SIDEBAR --- */
     position: sticky;
-    /* Adjust this value based on the exact height of .filter-bar */
     top: 74px; 
-    /* Ensures the sidebar itself doesn't scroll off-screen */
-    /* Adjust 80px based on .filter-bar height + any extra margin needed */
     max-height: calc(100vh - 80px); 
-    /* Allows content INSIDE sidebar to scroll */
     overflow-y: auto;
 
     /* Appearance */
@@ -500,9 +464,7 @@
     padding: 16px 20px; /* Inner spacing */
     border-radius: 8px; /* Optional: adds rounded corners */
 
-    /* --- 👇 THIS IS THE FIX 👇 --- 
-    This stops the flex container from stretching the sidebar.
-    */
+   
     align-self: flex-start; 
 }
 
@@ -568,9 +530,7 @@
                 margin-top: 8px;
             }
 
-            /* ====================================================
-            --- 6. FILTER SIDEBAR CONTENT STYLES ---
-            ==================================================== */
+        
 
             .category-list {
                 /* Padding moved to parent .filter-sidebar */
@@ -592,8 +552,7 @@
                 color: #555;
             }
             .filter-section {
-                /* Padding moved to parent .filter-sidebar */
-                padding: 16px 0; /* Add vertical space between sections */
+                padding: 16px 0;
                 border-bottom: 1px solid #e5e5e5;
             }
             .filter-section:last-child {
@@ -695,7 +654,6 @@
     margin: 0 auto; /* Center the container */
 }
 
-/* --- Top Section: Links + Location --- */
 .footer-main {
     display: flex;
     justify-content: space-between;
@@ -758,7 +716,6 @@
     color: #757575;
 }
 
-/* --- Bottom Bar: Copyright + Legal --- */
 .footer-bottom-bar {
     display: flex;
     justify-content: space-between;
@@ -836,32 +793,22 @@
         gap: 12px; /* Space between stacked legal links */
     }
 }
-/* ====================================================
---- 7. FOOTER STYLES ---
-==================================================== */
+
 
 .site-footer {
-    /* ... (your existing footer styles like background-color, color, padding) ... */
 
-    /* 👇 Add this line for space above the footer 👇 */
     margin-top: 48px; /* Adjust the value (e.g., 32px, 60px) as needed */
 
     border-top: 1px solid #e5e5e5; /* Optional: Add a subtle line above the footer */
 }
 
-/* Make sure your .main-content rule looks like this (from previous steps) */
 .main-content {
     display: flex;
     padding: 24px 48px;
     gap: 30px;
     background-color: #ffffff; /* Or your desired background */
-    /* Add margin-bottom here INSTEAD of margin-top on footer if you prefer */
-    /* margin-bottom: 48px; */
 }
 
-/* Ensure your sidebar rule includes align-self */
 .filter-sidebar {
-    /* ... (width, flex-shrink, position: sticky, top, max-height, overflow-y) ... */
-    align-self: flex-start; /* This is crucial for correct sticky behavior end */
-    /* ... (other styles) ... */
+    align-self: flex-start; 
 }
