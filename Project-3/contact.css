@@ -4,9 +4,6 @@
   padding: 0;
 }
 
-/* ================================
-   NAVBAR
-================================ */
 .navbar {
   display: flex;
   width: 100%;
@@ -61,9 +58,7 @@
   font-size: 1rem;
 }
 
-/* ================================
-   MAIN CONTAINER
-================================ */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -103,9 +98,7 @@
   color: blue;
 }
 
-/* ================================
-   FOOTER
-================================ */
+
 .footer {
   background-color: #27272f;
   width: 100vw;
@@ -148,11 +141,7 @@
   height: 4.5vh;
 }
 
-/* ================================
-   ✅ RESPONSIVE MEDIA QUERIES
-================================ */
 
-/* For tablets */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -215,7 +204,6 @@
   }
 }
 
-/* For mobile phones */
 @media (max-width: 480px) {
   .navbar {
     flex-direction: column;

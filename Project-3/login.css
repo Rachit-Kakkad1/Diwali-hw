@@ -82,11 +82,7 @@
   font-weight: bold;
 }
 
-/* ===================================
-   ✅ RESPONSIVE MEDIA QUERIES
-=================================== */
 
-/* For tablets (portrait + small laptops) */
 @media (max-width: 768px) {
   .wrap {
     padding: 5vw;
@@ -127,7 +123,6 @@
   }
 }
 
-/* For mobile phones */
 @media (max-width: 480px) {
   .wrap {
     padding: 6vw;

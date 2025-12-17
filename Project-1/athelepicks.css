@@ -1,6 +1,6 @@
 
             * {
-                box-sizing: border-box; /* Ensures padding doesn't add to the width */
+                box-sizing: border-box; 
                 margin: 0;
                 padding: 0;
             }
@@ -48,7 +48,6 @@
                 color: #757575;
             }
 
-            /* --- 2b. Main Navigation --- */
             .main-nav {
                 display: flex;
                 justify-content: center;
@@ -136,17 +135,16 @@
 
             .mega-menu {
                 position: absolute;
-                top: 80px; /* This is the height of your .main-nav */
+                top: 80px; 
                 left: 0;
                 right: 0;
                 background-color: #ffffff;
-                border-top: 1px solid #f0f0f0; /* Matches your nav border */
+                border-top: 1px solid #f0f0f0; 
                 box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 
-                /* Hide by default */
                 visibility: hidden;
                 opacity: 0;
-                transform: translateY(10px); /* Start slightly lower */
+                transform: translateY(10px); 
                 transition: all 0.3s ease;
                 z-index: 100;
             }
@@ -154,20 +152,20 @@
             .nav-item-with-megamenu:hover .mega-menu {
                 visibility: visible;
                 opacity: 1;
-                transform: translateY(0); /* Move to final position */
+                transform: translateY(0); 
             }
 
             .mega-menu-content {
                 display: flex;
-                gap: 72px; /* Space between columns */
-                max-width: 1280px; /* Made wider for 5 columns */
-                margin: 0 auto; /* Centers the content */
-                padding: 32px 48px; /* Padding inside the dropdown */
+                gap: 72px;
+                max-width: 1280px;
+                margin: 0 auto; 
+                padding: 32px 48px;
             }
 
             .mega-menu-column {
-                flex: 1; /* Each column takes up equal space */
-                min-width: 170px; /* Prevents columns from getting too narrow */
+                flex: 1; 
+                min-width: 170px; 
             }
 
             .mega-menu-column h3 {
@@ -193,21 +191,21 @@
                 padding: 0;
                 font-size: 14px;
                 font-weight: 400;
-                color: #757575; /* Grey text for links */
-                border-bottom: none; /* Removes the nav hover border */
+                color: #757575; 
+                border-bottom: none; 
                 transition: color 0.2s ease;
             }
 
             .mega-menu-column a:hover {
-                color: #111; /* Darken on hover */
-                border-bottom: none; /* Just to be sure */
+                color: #111; 
+                border-bottom: none; 
             }
 
             .mega-menu--notification {
-                background-color: #f5f5f5; /* Light grey background from image */
-                padding: 16px 48px; /* Padding for the bar */
+                background-color: #f5f5f5; 
+                padding: 16px 48px; 
                 text-align: center;
-                border-top: 1px solid #e5e5e5; /* Faint top border */
+                border-top: 1px solid #e5e5e5; 
             }
 
             .mega-menu--notification p {
@@ -219,7 +217,7 @@
 
           
             .mobile-menu-button {
-                display: none; /* Hidden by default */
+                display: none; 
                 background: none;
                 border: none;
                 padding: 8px;
@@ -231,7 +229,6 @@
                 z-index: 101;
             }
 
-            /* 3b. Mobile Menu Overlay (Hidden on Desktop) */
             .mobile-menu-overlay {
                 position: fixed;
                 top: 0;
@@ -242,11 +239,10 @@
                 z-index: 1000;
                 padding: 60px 24px 24px;
                 overflow-y: auto;
-                transform: translateX(100%); /* Start off-screen */
+                transform: translateX(100%); 
                 transition: transform 0.3s ease-in-out;
             }
 
-            /* This rule shows the menu when the checkbox is checked */
             #mobile-menu-toggle:checked ~ .mobile-menu-overlay {
                 transform: translateX(0);
             }
@@ -280,11 +276,11 @@
                 font-size: 18px;
                 font-weight: 500;
                 color: #111;
-                border-bottom: none; /* Override desktop hover effect */
+                border-bottom: none; 
             }
 
             .mobile-nav-menu a:hover {
-                border-bottom: none; /* Override desktop hover effect */
+                border-bottom: none; 
                 color: #757575;
             }
 
@@ -313,7 +309,7 @@
                 }
                 .nav-left,
                 .nav-right {
-                    position: static; /* Let them fall into the flex layout */
+                    position: static;
                     transform: none;
                 }
                 .nike-logo {
@@ -321,7 +317,7 @@
                     width: 40px;
                 }
                 .nav-right {
-                    gap: 8px; /* Reduce space between right-side icons */
+                    gap: 8px;
                 }
                 .search-container {
                     background-color: transparent;
@@ -352,29 +348,27 @@
           
 .banner-image {
     position: relative;
-    width: 90%; /* <-- Use a percentage width */
-    max-width: 1400px; /* <-- Optional: Set a maximum pixel width */
+    width: 90%; 
+    max-width: 1400px; 
     height: 450px;
-    margin-left: auto; /* <-- Center horizontally */
-    margin-right: auto; /* <-- Center horizontally */
-    overflow: hidden; /* Ensures image fits cleanly */
+    margin-left: auto; 
+    margin-right: auto; 
+    overflow: hidden; 
 }
-            /* Styles for the <img> tag inside the banner */
+           
             .banner-image img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* Scales the image to fill the container */
-                object-position: center ; /* Aligns the image to the bottom */
+                object-fit: cover; 
+                object-position: center ; 
             }
 
-            /* --- 4c. Overlay Title --- */
-            /* --- 4c. Overlay Title --- */
 .banner-title {
     position: absolute;
-    top: 150px; /* <-- INCREASED: Move text down */
-    left: 5%;   /* <-- Kept the same for now */
+    top: 150px;
+    left: 5%;   
     color: white;
-    font-size: 3rem; /* <-- DECREASED: Make text smaller */
+    font-size: 3rem; 
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -397,7 +391,6 @@
     z-index: 900;
 }
 
-            /* --- 4e. Product Count (Left Side) --- */
             .product-count {
                 font-size: 1.25rem;
                 font-weight: 500;
@@ -408,12 +401,11 @@
                 color: #757575;
             }
 
-            /* --- 4f. Filter Controls (Right Side) --- */
             .filter-controls {
                 display: flex;
                 align-items: center;
-                gap: 1.5rem; /* Space between the two buttons */
-                white-space: nowrap; /* Prevents buttons from wrapping */
+                gap: 1.5rem;
+                white-space: nowrap; 
             }
 
             .filter-toggle,
@@ -438,14 +430,13 @@
 
             .main-content {
                 display: flex;
-                /* Matches the padding of the sticky .filter-bar */
                 padding: 0 5%;
-                gap: 30px; /* Space between sidebar and grid */
+                gap: 30px; 
             }
 
 .filter-sidebar {
     width: 280px;
-    flex-shrink: 0; /* Prevents sidebar from shrinking */
+    flex-shrink: 0; 
 
     position: sticky;
     top: 74px; 
@@ -453,21 +444,19 @@
     max-height: calc(100vh - 80px); 
     overflow-y: auto;
 
-    /* Appearance */
     background-color: #ffffff;
-    padding: 16px 20px; /* Inner spacing */
-    border-radius: 8px; /* Optional: adds rounded corners */
+    padding: 16px 20px; 
+    border-radius: 8px; 
 
     align-self: flex-start; 
 }
 
-            /* --- 5c. Custom Scrollbar for Sidebar --- */
             .filter-sidebar::-webkit-scrollbar {
                 width: 10px;
             }
             .filter-sidebar::-webkit-scrollbar-track {
                 background: #ffffff;
-                border-radius: 0 6px 6px 0; /* Rounded corners match sidebar */
+                border-radius: 0 6px 6px 0; 
             }
             .filter-sidebar::-webkit-scrollbar-thumb {
                 background: #888;
@@ -478,29 +467,29 @@
             }
 
             .product-grid-container {
-                flex-grow: 1; /* Takes up all remaining space */
+                flex-grow: 1; 
                 width: 100%;
             }
             .product-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 gap: 20px;
-                padding-top: 16px; /* Align top with sidebar content */
+                padding-top: 16px; 
             }
 
            
             .product-card img {
                 width: 100%;
                 height: auto;
-                background-color: #f4f4f4; /* Placeholder background */
-                display: block; /* Fix potential spacing issues */
+                background-color: #f4f4f4;
+                display: block; 
             }
             .product-info {
                 padding-top: 10px;
             }
             .product-status {
                 font-size: 0.9rem;
-                color: #a0522d; /* Brownish-red from your image */
+                color: #a0522d; 
                 font-weight: 500;
             }
             .product-name {
@@ -525,7 +514,7 @@
             .category-list {
                 padding: 0;
                 border-bottom: 1px solid #e5e5e5;
-                margin-bottom: 16px; /* Add space before first filter section */
+                margin-bottom: 16px;
             }
             .category-list ul {
                 list-style: none;
@@ -541,12 +530,12 @@
                 color: #555;
             }
             .filter-section {
-                padding: 16px 0; /* Add vertical space between sections */
+                padding: 16px 0; 
                 border-bottom: 1px solid #e5e5e5;
             }
             .filter-section:last-child {
                 border-bottom: none;
-                padding-bottom: 0; /* No extra space at the bottom */
+                padding-bottom: 0; 
             }
             .toggle-checkbox {
                 display: none;
@@ -564,10 +553,10 @@
                 content: '▲';
                 font-size: 0.8rem;
                 transition: transform 0.2s ease;
-                transform: rotate(180deg); /* Down arrow */
+                transform: rotate(180deg);
             }
             .options-content {
-                display: none; /* Hidden by default */
+                display: none; 
                 padding-top: 15px;
             }
             .options-content ul {
@@ -595,16 +584,16 @@
                 font-weight: 500;
                 cursor: pointer;
                 padding-top: 5px;
-                margin-left: 2px; /* Aligns with checkbox text */
+                margin-left: 2px; 
             }
             .more-options:hover {
                 color: #555;
             }
             .toggle-checkbox:checked + .toggle-label::after {
-                transform: rotate(0deg); /* Up arrow */
+                transform: rotate(0deg); 
             }
             .toggle-checkbox:checked ~ .options-content {
-                display: block; /* Show content */
+                display: block;
             }
             .color-options {
                 display: flex;
@@ -634,20 +623,19 @@
 {
     background-color: #ffffff;
     color: #111111;
-    padding: 50px 60px; /* Padding around the whole footer */
-    border-top: 1px solid #f0f0f0; /* Faint top border */
+    padding: 50px 60px; 
+    border-top: 1px solid #f0f0f0;
 }
 
 .footer-container {
-    max-width: 1640px; /* Limit width */
-    margin: 0 auto; /* Center the container */
+    max-width: 1640px; 
+    margin: 0 auto; 
 }
 
-/* --- Top Section: Links + Location --- */
 .footer-main {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
+    flex-wrap: wrap; 
     gap: 60px;
     margin-bottom: 30px;
 }
@@ -655,17 +643,17 @@
 .footer-links-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 200px; /* Space between link columns */
+    gap: 200px; 
 }
 
 .footer-column h3 {
     font-size: 16px;
-    font-weight: 600; /* Bold */
+    font-weight: 600; 
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-.footer-column h3 span { /* The dropdown arrow */
+.footer-column h3 span {
     font-weight: normal;
     margin-left: 5px;
 }
@@ -682,16 +670,15 @@
 
 .footer-column a {
     text-decoration: none;
-    color: #111111; /* Dark text for links */
+    color: #111111; 
     font-size: 14px;
-    font-weight: 400; /* Normal weight */
+    font-weight: 400; 
 }
 
 .footer-column a:hover {
-    color: #757575; /* Gray on hover */
+    color: #757575;
 }
 
-/* --- Location --- */
 .footer-location a {
     text-decoration: none;
     color: #111111;
@@ -710,10 +697,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap;
     gap: 20px;
     padding-top: 60 px;
-    border-top: 1px solid #e5e5e5; /* The faint line from the image */
+    border-top: 1px solid #e5e5e5; 
     font-size: 17px;
     color: #757575; 
 }
